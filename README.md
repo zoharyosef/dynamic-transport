@@ -16,6 +16,8 @@ Number of vehicles on the road (lower is better - to prevent congestion and supp
 
 # How to run this:
 git clone
+
 npm install
+
 npm run dev (or just vite)
 
