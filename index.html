@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סימולאטור תחבורה סטטית מול דינמית</title>
+</head>
+
+<body dir="rtl">
+    <h1>סימולאטור תחבורה סטטית מול דינמית</h1>
+    <div class="score">
+        <div class="arrived-count">0</div>
+    </div>
+    <div class="controls">
+        <div class="bambo-btn" id="addDynamicDriverBtn"
+            title="תחבורה דינמית מחשבת את הנסיעה האופטימלת שתביא הכי הרבה נוסעים ליעדם בזמן הכי קצר">
+            🚕 הוספת תחבורה דינמית (uber, lyft, via...)
+        </div>
+        <!-- <div class="bambo-btn" id="addTaxiBtn">
+            🚕 הוספת מונית קלאסית
+         </div> -->
+        <div class="bambo-btn" id="addStaticDriverBtn">
+            🚌 הוספת תחבורה סטטית (קו קבוע על פי משרד התחבורה)
+        </div>
+    </div>
+    <canvas id="canvas" class="mesh"></canvas>
+   
+    <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'NotoColorEmoji';
+  src: url('NotoColorEmoji.ttf') format('truetype');
+}
+
+//font-family: , sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  justify-items: center;
+  background-color: #585858;
+  font-family: Arial;
+  --c1: #03a9f4;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+.controls {
+  display: flex;
+  gap: 3em;
+}
+
+.score {
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.mesh {
+  width: 90vw;
+  image-rendering: pixelated;
+  padding: 2%;
+  position: relative;
+  height: 80%;
+}
+
+.mesh i {
+  position: absolute;
+  width: 2vw;
+  height: 2vh;
+}
+
+.location {
+  background-color: #5f996a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 9%;
+  color: #301030;
+}
+
+.location span {
+  font-size: 0.5em;
+}
+
+.bambo-btn {
+  background-color: var(--c1);
+  color: white;
+  height: 3.4em;
+  border-radius: 3em;
+  box-shadow: 2px 2px 3px 2px #646464;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 3.2em;
+  text-align: center;
+  margin-bottom: 0.7em;
+  padding: 0 1em;
+  cursor: pointer;
+  user-select: none;
+  width: fit-content;
+  grid-column-gap: 0.5em;
+  white-space: nowrap;
+  margin: 0.5em auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.bambo-btn:hover {
+  filter: brightness(1.1);
+}
+
+.bambo-btn:active {
+  filter: brightness(1.5);
+}
